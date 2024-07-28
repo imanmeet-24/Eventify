@@ -1,0 +1,91 @@
+.login {
+  padding: 20px;
+}
+
+.row {
+  padding: 20px;
+  gap: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+  flex-basis: 50%;
+  padding: 0px 50px;
+  /* border: 1px solid #333; */
+}
+
+.login-box form input {
+  width: 80%;
+}
+
+.login-register {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-register input {
+  width: 100%;
+  padding: 10px;
+}
+
+.right-box {
+  flex-basis: 50%;
+  background-color: #333;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.signup-btn {
+  padding: 10px 20px;
+  border-radius: 5%;
+  background-color: peru;
+  border: none;
+  align-self: center;
+  color: aliceblue;
+}
+
+.remember-me {
+  width: 80%;
+}
+
+.remember-me input[type="checkbox"] {
+  width: fit-content !important;
+}
+
+.signup-btn a {
+  color: white;
+}
+
+input[type="submit"] {
+  width: fit-content !important;
+  padding: 15px 35px;
+  align-self: center;
+  margin: 20px;
+  background-color: #fa3939;
+  color: white;
+  border-radius: 5%;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+@media screen and (max-width: 758px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .right-box {
+    padding: 50px;
+  }
+}

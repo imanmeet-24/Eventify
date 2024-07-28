@@ -1,0 +1,47 @@
+footer {
+    background: #141414;
+    padding: 60px 26px;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer a:hover {
+    color: rgb(0, 69, 148);
+  }
+  
+  footer ul li {
+    margin: 10px 0;
+  }
+  
+  footer .logo img {
+    width: 100%;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-store{
+    flex-direction: row;
+  }
+
+  .app-store i {
+    font-size: 3.5rem;
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    padding: 3px;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  
+  .social-links a:hover {
+    color: #333;
+  }

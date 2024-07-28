@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- This Front End Final Project was Created by Group 1 -->
+<!-- Ajaya Prajapati (C0886029)-->
+<!-- Angrej Singh (C0884026) -->
+<!-- Manmeet Kaur (C0884039) -->
+<!-- Ravleen Kaur (C0886426) -->
+<!-- Riya Sidhu(C0886435)  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventify - Events</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/events.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-Hy5DkNPp9tNjXN1zPUbTpIvJfZCBTno4bRXgq+PrmL3fJvHVKCmX9OVdWZA+8JvL"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/22e71b5156.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navigation">
+        <input type="checkbox" class="hamburger-menu" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="logo">
+          <a href="/index.html"> <h2>Eventify</h2> </a>
+        </div>
+        <input type="checkbox" class="user-menu" id="checkbox_toggle_login" />
+        <label for="checkbox_toggle_login" class="user"
+          ><i class="fas fa-user"></i
+        ></label>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+            <li><a href="#contact-us">Contact US</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-account">
+          <a href="/login.html">Login/Signup</a>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <section>
+      <div class="banner-events">
+        <div class="wrapper">
+          <h2 class="banner-title">
+            Your All-in-one Source for Event Rentals in Toronto
+          </h2>
+          <h4 class="banner-subtitle">
+            We specialize in unique party rentals for your corporate events.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Upcoming Events</h2>
+      </div>
+      <div class="row">
+        <div class="event-left col-left shadow-none">
+          <div class="filter">
+            <h2>Filter Menu</h2>
+            <form class="filter-menu">
+              <div class="flex-row">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                  <option value="all">All</option>
+                  <option value="category1">Corporate Events</option>
+                  <option value="category2">Parties</option>
+                  <option value="category3">Fairs</option>
+                </select>
+              </div>
+              <div class="flex-row">
+                <label for="category-location">Location:</label>
+                <select id="category-location" name="category-location">
+                  <option value="all">All</option>
+                  <option value="category1">Downtown</option>
+                  <option value="category2">North York</option>
+                  <option value="category3">Markham</option>
+                </select>
+              </div>
+              <div class="flex-row">
+                <label for="date">Date:</label>
+                <input type="date" name="a" id="date" />
+              </div>
+              <div class="flex-row">
+                <label for="price">Price:</label>
+                <div class="range-slider">
+                  <input
+                  id="price"
+                    type="range"
+                    class="min-price"
+                    value="100"
+                    min="10"
+                    max="500"
+                    step="10"
+                  />
+                </div>
+              </div>
+              <button type="submit">Filter</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="event-right col-right shadow-none">
+          <div class="events">
+            <div class="events-card">
+              <h4>Music Festival</h4>
+              <div class="card-img">
+                <img
+                  src="img/music-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="MusicFestival"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Toronto</p>
+                <p>Day: 28th April</p>
+                <p>Time: 6pm -10pm</p>
+                <p>Ticket Price: $45</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img
+                  src="img/boat-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="BoatPartyFestival"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Hamilton</p>
+                <p>Day: 30th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $30</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Bollywood Party</h4>
+              <div class="card-img">
+                <img
+                  src="img/bollywood-party.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="BollywoodParty"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Mississauga</p>
+                <p>Day: 26th April</p>
+                <p>Time: 5pm - 10pm</p>
+                <p>Ticket Price: $38</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Ice Skating</h4>
+              <div class="card-img">
+                <img
+                  src="img/ice-skating.PNG"
+                  style="width: 200px; height: 200px"
+                  alt="IceSkating"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: North York</p>
+                <p>Day: 15th April</p>
+                <p>Time: 11pm - 4pm</p>
+                <p>Ticket Price: $33</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Standup Comedy</h4>
+              <div class="card-img">
+                <img
+                  src="img/standup-comedy.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="StandupComedy"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Etobicoke</p>
+                <p>Day: 22th May</p>
+                <p>Time: 5pm - 11pm</p>
+                <p>Ticket Price: $30</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Spring Festival</h4>
+              <div class="card-img">
+                <img
+                  src="img/spring-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="SpringFestival"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Mississauga</p>
+                <p>Day: 10th May</p>
+                <p>Time: 12pm - 4pm</p>
+                <p>Ticket Price: $20</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Job Fair Event</h4>
+              <div class="card-img">
+                <img
+                  src="img/job-fair.png"
+                  style="width: 200px; height: 200px"
+                  alt="JobFairEvent"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Brampton</p>
+                <p>Day: 19th April</p>
+                <p>Time: 12pm -4pm</p>
+                <p>Ticket Price: Free</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Pillow Fight Event</h4>
+              <div class="card-img">
+                <img
+                  src="img/pillow-fight.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="PillowFightEvent"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Toronto</p>
+                <p>Day: 20th April</p>
+                <p>Time: 11am - 3pm</p>
+                <p>Ticket Price: $20</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Easter Party</h4>
+              <div class="card-img">
+                <img
+                  src="img/easter-party.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="EasterParty"
+                />
+              </div>
+              <div class="events-details">
+                <p>Location: Scarborough</p>
+                <p>Day: 14th April</p>
+                <p>Time: 11pm - 4pm</p>
+                <p>Ticket Price: $26</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-links">
+            <div class="phone">
+              <a href="tel:+123456789">
+                <i class="fa fa-phone"></i>
+                <h4>+47 333 78 901</h4>
+              </a>
+            </div>
+            <div class="fax">
+              <a href="fax:+358.555.1234567">
+                <i class="fa fa-fax"></i>
+                <h4>+358.555.1234567</h4>
+              </a>
+            </div>
+
+            <div class="email">
+              <a href="fax:+358.555.1234567">
+                <i class="fa fa-envelope"></i>
+                <h4>info@eventify.ca</h4></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-left">
+            <div class="contact-desc">
+              <h3>Learn More!</h3>
+              <p class="text-justify">
+                Eventify! Events Group offers event planning services in Toronto
+                and the Greater Toronto Area since 2005. We focus on Business,
+                Marketing, Team Building, and Employee Engagement events. We
+                provide a seamless experience with event rentals, activations,
+                and corporate gifting. Our expertise ensures that clients
+                receive exceptional service and unforgettable events.
+              </p>
+            </div>
+            <div class="location-map">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5838.233500535048!2d-82.35180405252227!3d42.97581423258823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825830ada06f7cb%3A0x8f33c2e6a2ccfad1!2sLambton%20College!5e0!3m2!1sen!2sca!4v1681000812059!5m2!1sen!2sca"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-right">
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="telephone">Contact Number:</label>
+              <input type="tel" id="telephone" name="telephone" required />
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="color-white flex-row">
+      <div class="footer-one flex-column">
+        <div class="logo">
+          <h2>Eventify</h2>
+          <h5>Get the app and to see events on the go</h5>
+        </div>
+        <div class="social-links app-store">
+          <a href="https://play.google.com/">
+            <i class="fab fa-android"></i>
+          </a>
+          <a href="https://www.apple.com/ca/app-store/">
+            <i class="fab fa-apple"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-one flex-column">
+        <h3>Company</h3>
+        <ul class="color-white">
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Submit a blog</a></li>
+          <li><a href="">Are You A Vendor?</a></li>
+          <li><a href="">Meet The Team</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-one flex-column">
+        <h3>Vendors</h3>
+        <ul class="color-white">
+          <li><a href="">Venues</a></li>
+          <li><a href="">Caterers</a></li>
+          <li><a href="">Event Planners</a></li>
+          <li><a href="">Photographers</a></li>
+          <li><a href="">Videographers</a></li>
+          <li><a href="">Music Decor & Rentals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-one flex-column">
+        <h3>Find Us On</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
